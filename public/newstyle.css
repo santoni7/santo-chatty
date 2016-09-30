@@ -1,0 +1,19 @@
+.page.hidden{
+    display: none;
+}
+.message-field
+{
+    position: fixed;
+    bottom:0;
+    height:50px;
+    width: 100%;
+    background-color: #AAA;
+    padding:5px;
+}
+.message-field form{
+    height:100%;
+}
+#m
+{
+    width: 90%;
+}
