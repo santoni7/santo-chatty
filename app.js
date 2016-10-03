@@ -2,8 +2,15 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-//var db = require('./db.js');
-//var connection = db.connect();
+var db = require('./db.js');
+// var connection = db.connect(function(err) {
+//   if (err) {
+//     console.error('error connecting: ' + err.stack);
+//     return;
+//   }
+
+//   console.log('connected as id ' + connection.threadId);
+// });
 
 app.use(express.static('public'));
 
